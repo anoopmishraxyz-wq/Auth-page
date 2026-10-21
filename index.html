@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Main Auth Page Container -->
+  <main class="auth-container">
+
+    <!-- Auth Card Box -->
+    <div class="auth-card">
+
+      <!-- Header Section: Title & Subtitle / Create Account Link -->
+      <div class="auth-header">
+        <h1 class="auth-title">Sign In</h1>
+        <p class="auth-subtitle">or <a href="#" class="auth-link">create an account</a></p>
+      </div>
+
+      <!-- Auth Form -->
+      <form class="auth-form" action="#" method="POST">
+
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="email" class="form-label">Email ID</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com"
+            autocomplete="email" required>
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" name="password" class="form-input" placeholder="Enter your password"
+            autocomplete="current-password" required>
+        </div>
+
+        <!-- Show/Hide Password Checkbox -->
+        <div class="show-password-group">
+          <label class="checkbox-label">
+            <input type="checkbox" onclick="document.getElementById('password').type = this.checked ? 'text' : 'password'">
+            <span>Show password</span>
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-submit">Sign In</button>
+      </form>
+
+    </div>
+  </main>
+</body>
+
+</html>

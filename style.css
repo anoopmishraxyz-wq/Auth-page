@@ -1,0 +1,155 @@
+/* Reset and Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+  color: #0f172a;
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Auth Container */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* White Card Box */
+.auth-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 36px 32px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 10px 25px -5px rgba(15, 23, 42, 0.05);
+}
+
+/* Header */
+.auth-header {
+  margin-bottom: 24px;
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.025em;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+.auth-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* Form Inputs */
+.form-input {
+  width: 100%;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #0f172a;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-input::placeholder {
+  color: #94a3b8;
+}
+
+.form-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Show Password Checkbox */
+.show-password-group {
+  display: flex;
+  align-items: center;
+  margin-top: -4px;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #0f172a;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.btn-submit {
+  width: 100%;
+  padding: 11px 16px;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #ffffff;
+  background-color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.btn-submit:hover {
+  background-color: #1e293b;
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
